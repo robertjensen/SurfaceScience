@@ -1,0 +1,124 @@
+\newpage
+\chapter{Adsorption Processes}
+\section{Introduction}
+
+The gas-surface interaction and reactions on surfaces plays a very important role in many technologically important areas such as in corrosion, adhesion, synthesis of new materials, heterogeneous catalysis, etc. and  is therefore desirable to obtain a profound insigth in these processes. The impact of these studies have maybe been strongest in the field of heterogeneous catalysis where it has been possible to study quite realistic model systems since a large number of catalysts actually can be modelled by studies on well defined single crystals. Despite many years of effort do there, however, only exists very few examples, see fx \cite{Sciencepaper}, that surface science have let directly to the invention of a new catalyst. On the other hand has surface science provided the framework and necessary tools for understanding and designing new heterogeneous catalysts. The essential step in this process is first adsorption of the reactant on to the surface. Here they may react much easier with other reactants due to the changed chemical environnement on the surface. The proces should then be followed by a desorption process of the products cleaning of the surface making it available for new reactancts. In this part we shall focus on the physics and chemistry involved when gasses adsorbs on the surface and in particular metal surfaces. 
+
+When an atom or molecule approaches the surface it will fell the potential energy surface set up by the metal atoms in the solid. The interaction is usually divided into two regime the physisorption regime and the chemisorption regime.
+
+\section{Physisorption}
+
+Physisorption is a weak interaction which is characterized by lack of a true chemical bond between the adsorbate and the surface, i.e. no electrons are shared. The physisorption interaction  is conveniently divided into to parts: A strongly repulsive part at close distances and a Van der Waals interactions at medium ranges.
+\subsection{The van der Waals interaction}
+When a  atom/molecule approaches a surface will the  electrons in the atom/molecule, due to quantum fluctuations,  set up  an dipole which induces an image dipole in the polarizable solid. Since this image dipole is of the oppersite sign and correlated with the fluctuation in the atom/molecule will the resulting force be attractive. In the following we shall construct a simple model which elucidates this phenomena. Consider a hydrogen atom with nuclus at origo located above the surface of a perfect conducting metal at the position $\vec{d}$= (0,0,d) and an electron at  $\vec{r}$ =(x,y,z). The image charges induced in the metal will be
+\begin{equation}
+q=\frac{1-\epsilon}{1+\epsilon}e = -e, \epsilon \rightarrow \infty
+\end{equation}
+The potential due to this image interaction is then given by 
+\begin{equation}
+V_{W}(\vec{d},\vec{r}) \propto -\frac{e^{2}}{2d} - \frac{e^{2}}{2(d+z)} + 2\frac{e^2}{\mid 2\vec{d}+\vec{r} \mid}
+\end{equation} 
+where the two first terms are due to the interaction between the nuclus and it image and the electron and its image of itself. The third term is due to the two repulsive cross terms. Simple Taylor expansion in powers of $\frac{\vec{r}}{\vec{d}}$ leads to 
+\begin{equation}
+V_{W}(\vec{d},\vec{r}) \propto -\frac{e^{2}}{d^3}(\frac{x^{2}}{2} + \frac{y^{2}}{2} + z^{2}) 
+\end{equation}
+Thus the net result is an attractive potential which goes as
+\begin{equation}
+V_{W}(d) \propto \frac{-C_{vW}}{d^3}
+\end{equation}
+where C$_{vW}$ is the so-called van der Waals constant for the system which is dependent on the polarizability of the atom and the responce of the metal. Notice that the interaction does not require a permanent dipole and rare gas atoms may therefore also physisorb on the surface. An effect that we later shall utilize to determine the overall areas of surfaces.
+\subsection{The repulsive part}
+The attraction naturally does not continue for small d since the  electrons of the atom/molecule now will begin to interact strongly with the electrons of the surface. The kinetic energy of the solid increase as they will have to orthorgonalize to the localized electrons of the atom as a consequence of the Pauli repulsion. Some energy will natually be  gained as the same electrons also become attracted to the positive nucleus, but this can by no mean compenate the repulsion that occurs when it is not possible to make a chemical bonding as is the case for the rare gases. A simple approximation of the potential in this regime is an exponential function 
+\begin{equation}
+V_{R}(d) \propto e^{-\frac{d}{\alpha}}
+\end{equation}
+ since the desity of the electrons is decaying in this manner away  form the surface.
+The resulting potential 
+\begin{equation}
+V(d) = C_{R}e^{-\frac{d}{\alpha}}-\frac{-C_{vW}}{d^3}
+\end{equation}
+is shown in figure 2. The depth of the well is usually of the order a few kJ/mole or less and the minimum will be several Å from the surface. Thus molecules that are physisorbed on the surface are not chemically altered, but conserves theirs spectrosopic characteristica of the gas-phase. 
+
+The effect is very similat to the molecular van der Waals interaction which makes gasses condense in multilayers. Here the potential have a very similar form as it is of the same nature. Often a  Lennard-Jones (N,6)-potential is used which has the form 
+\begin{equation}
+V(d) = \frac{-C_{n}}{d^n}-\frac{C_{6}}{d^6}
+\end{equation}
+and in particular the n=6 is popular for matematical reasons, despite the fact that an exponential description as above usually give a better description of the repulsive part\cite{Atkins}. The attractive part goes in this case as d$^{-6}$ \cite{Atkins}.
+
+\section{Chemisorption}
+
+Before we treat chemisorption on surfaces i may be helpfull to first consider the most simple chemical bonding we can think of namely the bonding in the hydrogen molecule. This is not all that simpel and we will therefore start out with a H$_{2}^{+} ion. Consider to hydrogen atoms far away from each other then the electronic wave functions can be described by $\Psi_a$ and $\Psi_b$ which are eigenfunctions to the atoms with the energy $\epsilon_a$ and $\epsilon_b$. I we start to bring these two atoms close we know they will form a chemical bonding and end up as a molecule. The procedure for modelling this is to construct a new weavefunction from the atomic orbitals and the method is referred to as the linear combination of atomic orbitals (LCAO) medthod. In the following we shall neglect the spin. Thus the new wave function for one electron will have the form
+\begin{equation}
+\Psi = c_{1}\Psi_{a} c_{2}\Psi_{b}
+\end{equation}
+and the Hamilton will have the form 
+\begin{equation}
+H = (-\frac{\hbar^{2}}{2m_{e}})\nabla^{2} +  (\frac{e^{2}}{4\pi\epsilon_{0}}\biggl( -\frac{1}{r_{a}} - \frac{1}{r_{b}}  + \frac{1}{R}\biggl) 
+\end{equation}
+where r${a}$ and r$_{b}$ are the distance of the single electron to the nuclei a and b.
+By using the variation principle and solving the secular equations
+\begin{equation}
+\Sigma_{i} C_{i}({\bf H_{ik}} - {\bf ES_{ik}}) = 0,
+\end{equation}
+where H$_{ik}$ are matrix elements of the hamiltonian and S$_{ik}$ are the overlap matrix elements. Note that the atomic wavefunction are not orthorgonal.  These equations have  solutions when the determinat vanishes i.e when
+\begin{equation}
+\begin{vmatrix} \alpha-E & \beta -SE \\ \beta - ES & \alpha - E\end{vmatrix}
+\end{equation}
+where  we have used 
+\begin{description}
+\item[S$_{aa}$]= 1 since $\Psi_{a}$ was already normalized.
+\item[S$_{bb}$]= 1 since $\Psi_{b}$ was already normalized.
+\item[S$_{ab}$]= S the overlap intergral
+\item[$\alpha$]= H$_{aa}$ = H$_{bb}$ = $\int \Psi_{a}((-\frac{\hbar^{2}}{2m_{e}}\nabla^{2}) +\frac{e^{2}}{4\pi\epsilon_{0}}\biggl(-\frac{1}{r_{a}} - \frac{1}{r_{b}} + \frac{1}{R}\biggl))\Psi_{a}dV$
+\item[$\beta$]= H$_{ab}$ = $\int \Psi_{b}((-\frac{\hbar^{2}}{2m_{e}}\nabla^{2}) +\frac{e^{2}}{4\pi\epsilon_{0}}\biggl( -\frac{1}{r_{b}} - \frac{1}{r_{a}} + \frac{1}{R}\biggl))\Psi_{b}dV$
+\end{description}
+The result is two energy levels of the form:
+\begin{equation}
+c_{a}=c_{b} , c_{a}=\frac{1}{\sqrt{2(1+s)}}, E_{+}= \frac{\alpha+\beta)}{1+s}
+\end{equation}
+\begin{equation}
+c_{a}=-c_{b} , c_{a}=\frac{1}{\sqrt{2(1-s)}}, E_{+}= \frac{\alpha-\beta)}{1-s}
+\end{equation}
+The terms $\alpha$ and $\beta$ can be rewritten renembering that the eigenvalue of the atomic hamiltonias is just E$_{1s}$ i.e.
+\begin{equation}
+\alpha = E_{1s} +\frac{e^{2}}{4\pi \epsilon_[0} R}-j1
+\end{equation}
+where
+\begin{equation} 
+j1 = \frac{e^{2}}{4\pi\epsilon_{0}} \int \Psi_{a}\frac{1}{r_{b}}\Psi_{a}dV$
+\end{equation}
+is a positive quantity. In a semilar manner can $\beta$ be rewritten as 
+\begin{equation}
+\beta = (E_{1s} +\frac{e^{2}}{4\pi \epsilon_{0} R})S-k1
+\end{equation}
+where 
+\begin{equation} 
+k1 = \frac{e^{2}}{4\pi\epsilon_{0}} \int \Psi_{a}\frac{1}{r_{a}}\Psi_{b}dV$
+\end{equation}
+In this manner can the two solutions be written as 
+\begin{eqnarray}
+E_{+} = E_{1s} +\frac{e^{2}}{4\pi \epsilon_{0} R}-\frac{j1+k1}{1+S}\\
+E_{-} = E_{1s} +\frac{e^{2}}{4\pi \epsilon_{0} R}-\frac{j1-k1}{1-S}
+\end{eqnarray}
+Since both j1 and k1 are positive  will we get a  an upward shidt of both levels and then a upeward and down ward splitting as shown in Figure 3. Notice that the downward shift thus is smaller than the upward shift. The energy gain by forming the H$_{2}^{+}$ ion is thus the energy gain by moving one electron from E$_{1s} down indo the E$_{+}$ state.
+
+In reality we wanted to consider the hydrogen molecule. The gross effect just corresponds to filling to electrons into the diagram show in figure 3 although the splitting will chage quantitatively.  For a hydrogen molecule will we have the hamiltonian:  
+\begin{equation}
+H = (-\frac{\hbar^{2}}{2m_{e}})(\nabla_{1}^{2} +\nabla_{2}^{2}) +  (\frac{e^{2}}{4\pi\epsilon_{0}}\biggl( -\frac{1}{r_{1a}} - \frac{1}{r_{1b}} - \frac{1}{r_{2a}} - \frac{1}{r_{2b}} + \frac{1}{r_{12}} + \frac{1}{R}\biggl) 
+\end{equation}
+and the LCAO must no be construted from linear combination of two electron wave functions i.e.
+\begin{equation}
+\Psi(1,2)=\frac{1}{2(1+S)}(\Psi_{a}(\vec{r1})+\Psi_{b}(\vec{r1}))(\Psi_{a}(\vec{r2})\Psi_{b}(\vec{r2}))
+\end{equation}
+agan neclegting the spin. The procedure follows the schemme give above for the ion except that a few new terms arises due to the changes in the hamiltonian.
+The result of these consideration gives the eigen values:
+\begin{eqnarray}
+E_{+} = 2E_{1s} +\frac{e^{2}}{4\pi \epsilon_{0} R} + \frac{j2-2j1+k2-2k1S}{1+S^{2}}\\
+E_{-} = 2E_{1s} +\frac{e^{2}}{4\pi \epsilon_{0} R} + \frac{j2-2j1-k2+2k1S}{1-S^{2}}
+\end{eqnarray}
+where 
+\begin{eqnarray}
+j2=\frac{e^{2}}{4\pi\epsilon_{0}} \int \Psi_{a}^2(\vec{r1})\frac{1}{r_{12}}\Psi_{b}^2(\vec{r2})dV_{1}dV_{2}\\
+k2= \frac{e^{2}}{4\pi\epsilon_{0}} \int \Psi_{a}(\vec{r1})\Psi_{b}(\vec{r1})\frac{1}{r_{12}}\Psi_{a}(\vec{r2})\Psi_{b}(\vec{r2})dV_{1}dV_{2}
+\end{eqnarray}
+Usually the term J=j2-2j1 and K=k2-k1S are introduced as the coulomb and exchange integral respectively  and both are negative. The dissociation energy (2E$_{1s}$-E$_{+}$) is found to be 303 kJ/mol  which compared to the experimental values is somewhat low.

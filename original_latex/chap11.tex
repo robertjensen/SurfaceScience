@@ -1,0 +1,111 @@
+\newpage
+\chapter{Ion Scattering Methods}
+
+There are a wide number of other important methods in surface science and it is beyond the scope of these notes to treat them all. Nevertheless the ion scattering methods deserves to be mentioned briefly, since they are used widely and will be encountered quite often in the literature.
+
+Previously we have seen how heavy ions like Ar could be used to remove atoms from the surface and how that combined with an analytical method like AES could be utilized to get information from deeper lying layers. In the following section we shall see how primarily light ions such as H$^+$ or He$^+$ can be used to actually identifying various elements at the (Ion Scattering Spectroscopy), and also how they in the high energy version can be used to make a non-destructive depth profile. Both methods come in more advanced version where also surface geometry can be investigated and serve as tool for structural investigations like LEED.
+
+
+\section{Low Ion Scattering Spectroscopy}
+The principle Low Energy Ions Scattering (LEIS) or just Ion Scattering Spectroscopy (ISS) is very simple and can be performed in many UHV champers in its basic version. All that is required is an ion gun and a bipolar analyzer so that the energy of positive ions instead of electrons can be measured in an angle resolved manner. Naturally the setup can be more advanced by having a well focused ion source so that lateral resolution can be obtained or with a movable analyzer so that the ions can be detected in various scattering geometries. In the following shall we only consider the simple version where the angle between the analyzer and the ion gun is fixed. The geometry is depicted in Figure 1. 
+
+\vspace*{8cm}
+
+\noindent {\bf Figure 11.1} Schematic drawing of the ISS setup.
+
+\vspace{1cm}
+
+
+\vspace*{8cm}
+
+\noindent {\bf Figure 11.2} Calculated He$^+$ ion trajectories as a function of impact parameter. The energy of the He beam was 1 keV and the target atom is Yb.
+
+\vspace{1cm}
+
+
+
+ISS usually refers to primary energies of 1-2 keV energy of the ions. Preferentially He is used although heavier ions like Ne are also encountered. Very low ion doses are used in order not to create to much damage on the surface by sputtering processes. This is also one of the reasons for using lighter He ions. In this low  energy regime the ions interact nearly perfect through a binary collisions with the surface atoms. The method is vey surface senistive since it has a large scattering cross section $\sim Å^{2}$ and thereby a large shadow cone see Figure 2 ensuring that most ions are not passing throug the first layer of the sample. Furthermore will most of the ions hitting the surface be neutralized ( > 99 \%) so very few are surviving the interaction as an ion.
+
+
+
+ This make the method particularly surface sensitive since ions which penetrates into the surface or undergoes multiple scattering basically all will be neutralized and not detected in the electrostatic analyzer if they were to be scattered back. Since it is a simple binary collision there will be conservation of momentum and energy:
+\begin{equation}
+M_{i} \vec{v_{0}} = M_{i} \vec{v_{1}} + M_{s} \vec{v_{s}}
+\end{equation}
+and 
+\begin{equation}
+\frac{1}{2} M_{i} v_{0}^2 = \frac{1}{2}M_{i} v_{1}^{2}  + \frac{1}{2} M_{s} v_{s}^{2}
+\end{equation}
+where M$_i$, M$_s$, $\vec{v_0}$, $\vec{v_1}$, and $\vec{v_s}$ are the mass of the in coming ion, the mass of the surface atom, the velocity of the in coming ion, the velocity of the scattered ion and the velocity of the surface atom after the interaction.
+
+After appropriate manipulation of the above equations the following ratio between the velocities of the in coming and out going ion can be found:
+\begin{equation}
+\frac{v_{1}}{v_{0}} = \frac{\pm \sqrt{M_{s}^{2}-M_{i}^2 sin^{2}(\theta)} + M_{i} cos(\theta)}{M_s+M_i}
+\end{equation}
+
+If the M$_{i}$ < M$_{s}$ the plus sign applies and the ration between the energy of the scattered ion is:
+
+\begin{equation}
+\frac{E_{1}}{E_{0}} =  \fracwithdelims[]{\sqrt{M_{s}^{2}-M_{i}^2 sin^{2}(\theta)} + M_{i} cos(\theta)}{M_s+M_i} ^{2}
+\end{equation}
+
+The equation shows that the energy of the ion after  the scattering event is only dependent on the initial energy of the ion, the angle $\theta$ and the mass of the surface atom. Since only the latter is unknown the mass of the surface atom can be determined. A typical ISS spectrum is shown in Figure 3. 
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.3} Schematic drawing of the STM setup.
+
+\vspace{1cm}
+
+
+ The big advantage of ISS is that it basically restricted to probing the surface layer. Thus if  say  a 50-50 alloy is studied it is quite easily seen if one component segregates to the surface on cost of the other one. The same results are in principle obtainable from an AES or XPS study, but here will also deeper lying layers always contribute complicating the analysis. The mass resolutions is typically not very good (depends naturally on geometry and resolution power of the analyzer) and it is usually not possible to distinguish two neighbor elements such as nickel and copper unless special equipment and isotopically cleaned samples are used. In some specific cases the resolution between different element can be improved considerably by for instance using Ne$^{+}$ ions instead of He$^{+}$ ions, but great care should here be exercised that the surface is not damaged by sputtering during the measurements.
+
+ In dedicated instruments it may be possible to make angle resolved measurements changing the  angle of the analyzer. By comparing such data to calculations of the absolute scattering cross section of the various atoms present on the surface and by making model calculation it is possible to extract information on the surface structure  just as could be done by modeling LEED IV-curves. Such  analysis is just as LEED restricted to well-behaved flat surfaces. Recently a dedicated instrument has been developed by  \cite{Brongersma} utilizing the advantages of the geometry of a CMA. By having the ion gun along the center of the analyzer, which is normal to the surface, and collecting scattered ions in a ring  of the cylinder, a huge gain in signal can be obtained. This means that it first of all is very fast to perform an analysis and secondly only very small doses of ions are necessary limiting the potential danger of destruction of the surface.
+
+\section{High Energy Ion Scattering Spectroscopy}
+This method will only be treated briefly here since it is not a general method as it requires access to high energy accelerators. An extensive  review of these methods can be found in \cite{feldman}. In a typical Rutherford Backscattering Spectroscopy (RBS) experiment  ions are used which has energies in the rage of 0.5-5 MeV. H$^{+}$, D$^{+}$and He$^{++}$ ions at these energies have a very small cross section for scattering and will therefore have a penetration depth of several $\mu$m into the material. By measuring the energy of the ions scattered back - $\theta$ = 170$^{\circ}$  - into a high energy ion detector it can in the same manner as for ISS be deduced which atoms the ion has encountered in the solid. The high energy  ion detector is typically a gold coated silicon wafer where the ions during de acceleration forms electron-hole pairs in the silicon in a number proportional to the energy of the incoming ion. Furthermore, as the ions will lose energy during penetration of the solid and since this energy loss can be estimated quite accurate is it possible to estimate the thickness the ions have penetrated in the sample. An example of a RBS is shown in Figure 4 where 3 MeV He$^{+}$ ions are back scattered ($\theta$ = 170$^{\circ}$) from a 4000 Å thick Aluminum film with gold overlayers on both sides. Notice that the position of the front of the peaks reveals the element and the width the thickness of the various elements. Gold shows two peaks since ions scattered from the gold film on the back side will lose energy penetrating the aluminum film twice. Thus RBS analysis can be a powerful tool in many connections where it is necessary to analyze sandwich structure or diffusion profiles.
+
+
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.4} Schematic drawing of the STM setup.
+
+\vspace{1cm}
+
+
+
+\section{Secondary Ion Mass Spectroscopy} Secondary Ion Mass Spectroscopy (SIMS)is a method very similar to ISS in the sense that also here are low energy ions used and the convectional UHV equipment will be sufficient. But instead of performing energy analysis of the back scattered ions  a mass analysis of particles sputtered away from the surface is performed as illustrated in Figure 5. This allows for a detection of which elements, fractions of molecules, or clusters have been present on the surface. The method is very sensitive and can in some cases measure down to ppm levels of impurities in a sample. This makes the method  particularly applicable in the microelectronic industry for characterizing for instance the silicon wafers for impurities and dopant.
+
+
+
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.5} Schematic drawing of the SIMS setup.
+
+\vspace{1cm}
+
+Quantitative analysis is in general difficult in surface science, but it is a particular problem in SIMS due to the fact that the method relies only on the ions coming off the surface. Ideally all species should be detected if a correct composition should be extracted. As we saw for the ISS experiments the change of surviving as an ion was very little when interacting with the surface. Furthermore will this probability be very dependent on the element in question and the behavior of the surface. In an approximate picture a simple relation can be obtained \cite{Norskovlang} where the probability for obtaining positive ions is given by
+\begin{equation}
+P^{+} \propto e^{-\frac{(\Phi-A)}{\epsilon_{0}}} 
+\end{equation}
+where $\Phi$ is the work function of the surface, A is the affinity level of the atom leaving the surface, and $\epsilon_0$ is a variable dependent, among other things, on the hopping matrix element of the electron from the atom to the surface and the velocity normal to the surface of the atom leaving. Similarly is the probability for negative ions given by
+\begin{equation}
+P^{-} \propto e^{-\frac{(I-\Phi)}{\epsilon_{0}}} 
+\end{equation}
+where I is the ionization potential of the atom leaving the surface. It is now obvious why the probability for obtaining signal in SIMS will vary orders of magnitude for the different elements and why it is not possible to say anything about the surface composition from a spectra without taking due respect to the sensitivities of the different elements.  A SIMS spectrum of Si is shown in figure 6 together with an AES analysis of the same surface. The Sims analysis reveals may components which are not observed in the AES spectrum at all.That the probability also depends on the work function $\Phi$ makes things even worse since that will tend to vary strongly with the surface composition during a sputter profile. 
+
+
+\vspace*{16cm}
+
+\noindent {\bf Figure 11.6} Schematic drawing of the STM setup.
+
+\vspace{1cm}
+
+The quantitative analysis can naturally be considerably improved by using well known standards and the method is particular useful for measuring trace amounts of elements where methods like XPS and AES have  to give in due to their detection limit (roughly 1 atomic percent). SIMS can also be used for measuring bigger fragments sputter of the surface. For instance has SIMS is some special cases been used in catalysis to monitor whether certain intermediates may be present at the surface or not. Even bigger fragments can be analyzed, but then a conventional quadrupole mass spectrometer may not be sufficient any longer. Instead a Time of Flight technique (TOF)is used. This approach is particular useful when analyzing the fragments coming of polymer surfaces.
+
+
+There are many interesting aspects to these ion based methods, but the reader is referred to Briggs and Seah for a thorough treatment \cite{briggs2} of this subject.
+
+

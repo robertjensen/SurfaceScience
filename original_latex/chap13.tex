@@ -1,0 +1,190 @@
+\newpage
+\chapter{Temperature Programmed Desorption and Reaction}
+Temperature Programmed Desorption (TPD) and Temperature Programmed Reaction
+(TPR) are  simple methods that relative fast can give an overview of:
+\begin{itemize}
+\item The bonding energy of simple adsorbates to a specific surface
+\item On-set  temperatures of reaction or decomposition
+\item Reaction pathways on the surface
+\end{itemize}
+all topics of great importance for studying catalysts since these are essential parameters which often are desired to manipulate in order to improve the overall performance. The  methods also sometime are referred to as Temperature Programmed Desorption Spectroscopy (TDS), Temperature Programmed Reaction Spectroscopy (TPRS), and a hole family of Temperature Programmed (Reduction, Oxidation, Sulfidation) Spectroscopies, but as the methods have nothing to do with spectroscopy we shall only apply the  acronyms TPD and TPR here.
+
+\section{Experimental setup}
+The simplest type of experiments with TPD or TPR are those made under UHV conditions on well defined single crystals. Here a single crystal can be mounted on  for example Tungsten wires and heated resistively. By having a feed back system is it possible to heat the crystal by a linear ramp as 
+\begin{equation}
+T = \beta t + T_0
+\end{equation}
+where $\beta$ is the heating rate and T$_0$ the start temperature. A typical heating rate is 1-5 Ks$^{-1}$. Non-linear ramps may also be used, but that makes the subsequent analysis very complicated.
+Assume that we have already adsorbed some molecules on a surface and we positioned it in front of a mass spectrometer. We will then be able to measure what desorbs from the surface as a function of the crystal temperature. A typical setup is shown in Figure 11.1. The mass spectrometer (a quadrupole) is mounted inside a differential pumped shield so it does not measure  gasses released into the main chamber   where the crystal is mounted. The only connection between  the two chambers is hole with a diameter 3-4 mm. Doing TPD the crystal is brought up in  front of the hole ( $ < $ 0.5 mm) so only gas molecules desorbing from the central part of the crystal will be able do desorb into the mass spectrometer housing and be detected. In this manner, undesired signals from the surroundings, the sides of the crystal which are not well defined, and the wires, can be eliminated. It is naturally important that the differential pumping speed of the mass spectrometer is sufficiently high that it does not lead to substantial broadening of the TPD features. Although some broadening will always be  present since infinite pumping speed is usually not obtainable. (Infinite pumping speed is nearly obtained when studying desorption of for example metals, since they will stick to the first surface they encounter).
+
+\vspace*{12cm}
+
+\noindent {\bf Figure 11.1} Schematic drawing of an UHV setup for TPD and TPR. Taken from \cite{Yates}
+
+\vspace{1cm}
+
+As indicated in Figure 10.1 can this setup also be used for TPR by dosing the surface with molecules while performing a TPD. The crystal must then be retracted somewhat from the mass spectrometer housing so that  the beam of reactants can be dosed on the surface. In both cases the mass spectrometer can be multiplexed so many masses (typically 16) can be followed while heating. In many cases it can be very useful to use isotopically labeled atoms like C$^{13}$, N$^{15}$, and O$^{18}$ or Deuterium in order to determine different  reaction pathways on the surface.
+
+Both experiments can also be performed on more complicated surfaces like real catalysts. One way is to mount a catalyst sample instead of the crystal. Again,  it is possible to obtain the same sort of information as with the single crystal. Unfortunately are the catalyst often rather inert to the reactants and relative high pressures (which may not be compatible  with UHV) are needed to obtain any reaction. The crystal or catalyst may naturally be exposed to high pressure if the UHV system is equipped with a high pressure cell, but it is very difficult to follow the reaction here. 
+
+Thus another approach is to use a plug flow reactor containing a small amount of catalyst material, typical 0.1-1.0 g.  By heating the crystal in a flow of inert gas like He while ramping a TPD experiment can be performed. Similarly can also the TPR experiment be done if reactants are supplied at the same time. It should, however, in these sort of experiments be remembered that the catalyst usually is a very complex system, with a huge internal area and pore system. The processes we want to observe will therefore easily be transport limited, resulting in erroneous data for example due to   readsorption. The heating rate is therefore typically two orders of magnitude lower (Kmin$^{-1}$). The loss in intensity is more than compensated by the fact that 1 g of catalyst usually have areas that are 4-6 orders of magnitude higher than the single crystals used in the UHV experiments. The analysis of the TPD or TPR is made by analyzing the gas composition down stream. This can be done either by taking a small amount of gas into a  differentially pumped mass  spectrometer  or simply using a fast gas chromatograph. The mass spectrometer is prefered for small molecules and when good time resolution is essential. In this sort of experiment is it also possible to follow the reaction when the catalyst is either reduced or oxidized as mentioned above.  
+
+
+
+\section{Theoretical background}
+In the following we shall go though a model giving the essential rates of a  a desorption process. Since the desorption process may be considered as a special case of a reaction the same  picture  will also apply here.
+
+In the TPD experiment we will typically have molecules like for example CO adsorbed on the surface. The molecules will  be bond to the surface in a potential with a well  depth E$_d$  shown schematically in Figure 11.2. At low temperatures the molecules will be in their vibrational ground state with energy $\frac{1}{2}\hbar \omega_0$. The mode where the entire molecule vibrates normal to  the surface. In the following we shall consider a group of such molecules distributed thermally  on the energy levels $\varepsilon$.
+At temperatures kT $\gg \ \hbar \omega(\varepsilon)$ the number of trapped particles are given by 
+\begin{equation}
+n_{0}(T) = \int _{-E_d}^{0} g(\varepsilon)f_0(\varepsilon)d\varepsilon
+\end{equation}
+where $g(\varepsilon)$ is the density of the oscillator states in the potential and  
+\begin{equation}
+f_0(\varepsilon) = Z_{ads}e^{-\frac{(\varepsilon-\mu)}{kT}}
+\end{equation}
+is the occupation factor where Z is the partition function describing the internal degrees of freedom  and $\mu$ is the chemical potential.
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.2} Schematic model of the potential for CO adsorbed on a surface.
+
+\vspace{1cm}
+
+
+
+
+We shall also  assume that the potential is sufficiently deep that E$_d$ $\gg$ T so that the population is dominated by energies at the bottom of the potential around kT. Thus we will approximate the density by  $g(\varepsilon) = \frac{1}{\hbar \omega(\varepsilon)} =  \frac{1}{\hbar \omega_0}$.
+This approximation leads to
+\begin{equation}
+n_0(T) = \frac{kT}{\hbar \omega_0} Z_{ads} e^{\frac{\mu + E_d}{kT}} 
+\end{equation}
+In the TPD experiment there will in principle be no gas molecules present.  Thus the adsorbed molecules will be in thermal equilibrium with the surface except those which are at the top of the potential in the transition state. The flux of molecules leaving per time unit  here will be
+\begin{equation}
+J_0 = n_0 R 
+\end{equation}
+where R defines the desorption rate. The flux J$_0$ can be calculated from kinetic theory as an integral in phase space (x,p) of molecules in the transition state
+\begin{equation}
+J_0 = \int_{0}^{\infty}\frac{f(\varepsilon)}{h}dxdp 
+\end{equation}
+Using that $\varepsilon = \frac{p^2}{2m}$ is now the kinetic energy of the molecule and dx =  $\frac{pdt}{m}$ is the length traveled in time dt we get
+\begin{equation}
+J_0 dt = \frac{kT}{h}Z_{trans}e^{\frac{\mu}{kT}}dt 
+\end{equation}
+where Z$_{trans}$ is the partition function of the molecule in the transition state. By comparison of J$_0$ we get 
+\begin{equation}
+R = \frac{\omega_0 Z_{trans}}{2 \pi Z_{ads}} e^{\frac{-E_{d}}{kT}} 
+\end{equation} There have been made several approximations here, but this equation  essentially describes the TPD experiment where the E$_d$ is the activation energy for desorption and $\frac{\omega_0 Z_{trans}}{2 \pi Z_{ads}}$ is the prefactor usually called $\nu$ leading us to the well know form
+\begin{equation}
+R = \nu e^{\frac{-E_{d}}{kT}}
+\end{equation}
+for a simple first order desorption mechanism like associatively bonded  CO  desorbing from a surface. The prefactor $\nu$ is often approximated by the attempt frequency $\frac{\omega_0}{2\pi}$ which is of the order 10$^{13}$ neglecting differences in the  partition function for the ground and the transition state.
+
+
+The number of molecules desorbing from a surface per time unit $\frac{dN}{dt}$ (the quantity measured in the TPD experiment) will then be the number of molecules left on the surface  at time t times the desorption rate,  leading to the common differential equation
+\begin{equation}
+\frac{dN}{dt} =-N(t)\nu e^{\frac{-E_{d}}{kT}}
+\end{equation}
+using that $\theta = \frac{N}{N_0}$ where $N_0$ is the saturation coverage we get for a 1 order process
+\begin{equation}
+\frac{d\theta}{dt} =-\theta \nu e^{\frac{-E_{d}}{kT}}
+\end{equation} This equation can be generalized to higher orders i.e. where two atoms like for example C and O recombines to form CO in order to desorb and the expression takes the form
+\begin{equation}
+\frac{d\theta}{dt} = \dot{\theta} = -{\nu}_n {\theta}^n e^{-\frac{E_d}{RT}}
+\end{equation}
+where ${\nu}_n$ is a modified pre-exponential factor, n is the order of the process,
+E$_d$ the desorption energy [J/mole] and T the temperature of the surface.
+
+These differential equations cannot be solved analytically and numerical solutions must be used to analyze the TPD curves. However, often a must faster approach can be used if we just want a rough estimate of E$_{d}$.
+By differentiating the expression in equation  
+with respect to the temperature, 
+and putting this equal to 0 we find the temperature at which the TPD curve has it maximum T$_p$  
+\begin{equation}
+\frac{E_d}{R{T_p}^2} = {\nu}_n  n  {\theta}^{(n-1)}  \frac{1}{\beta}  e^{\frac{-E_d}{RT_p}}
+\end{equation}
+T$_p$ is identified from the measured spectrum.\\
+The order of the process, n, is one 
+if the desorption only requires one site as for CO on Ni(111) where CO adsorbs and desorbs as a molecule. 
+If 2 atoms recombine to form the molecule we monitor, for example D$_2$ on 
+Ni(111) the order is two.
+For a n=1 process we have that
+\begin{equation}
+\label{eq:n=1a}
+\frac{E_d}{R{T_p}^2} = {\nu}_1 \frac{1}{\beta}  e^{\frac{-E_d}{RT_p}}
+\end{equation}
+This can be rewritten as an expression which can be solved  iteratively
+to determine E$_d$ from information about T$_p$, $\beta$ and an appropriate
+initial guess of $\nu$, usually 10$^{13}$. This is a so-called Redhead analysis.
+\begin{equation}
+E_d = -RT_p ln(\frac{\beta E_d}{\nu_1 RT_p^2})
+\end{equation}
+where it should be noted that is assumed that $\nu$ and  E$_d$ are  independent of the coverage.
+A similar analysis can be made for 2. order desorption.
+
+From the above analysis it is seen how the TPD experiment can be used to estimated the bonding energy of adsorbed molecules to the surface. It should be noted that it actually the barrier for desorption we are probing see Figure 11.2 so in cases of activated processes this will be higher than the binding energy by the height of the activation energy for adsorption E$_a$.
+
+In general will the both  $\nu$ and  E$_d$ depend on the coverage since the adsorbates will interact. This may lead to rather broad features and sometimes to more than one peak in the TPD curves, dependent on the nature of the lateral interaction. In figure 11.3 are a number of examples  for 0., 1., and 2. order desorption features shown with increasing repulsive interaction energies i.e. E$_d$=E$_0$-E$_{veks}\theta$. Please notice that attractive interaction may also occur leading to upward shifts in the TPD curves.
+
+
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.3} Desorption curves for 0., 1., and 2. order desorption for different coverages and desorption energies  E$_d$=E$_0$-E$_{veks}\theta$.
+
+\vspace{1cm}
+
+
+
+
+
+\section{Examples}
+
+In the following shall we give a few examples on TPD and TPR experiments.
+In the first example shown in Figure 11.4 is the desorption of CO from a stepped Pd(112) crystal studied as a function of coverage \cite{Yates1}. This is a simple 1. order desorption process. Isotropical CO was used since that reduces the background in the TPD experiment (mass 30 usually is very low compared to mass 28 in most UHV chambers). Initially a feature at 500 K grows in with increasing dosages, but when that has saturated an other feature at around 400 K is getting filled. The TPD curve can be interpreted as being due to two different bonding sites on the surface, namely one at the steps (the high temperature feature) and one on the terrace (low temperature feature). From such an experiment using the above equations the difference in binding energy can easily be estimated. It should be noted that on the Pd(111) surface only the low temperature feature was observed.
+
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.4} Desorption curves for CO from a Pd(112) single crystal as function of coverage.
+
+\vspace{1cm}
+
+The second example is desorption of hydrogen from Cu(100) shown in figure 11.5 \cite{Rasmussen}. In this particular experiment the Cu(100) surface was exposed to atomic hydrogen since the sticking of molecular hydrogen is very low. This process  is modeled reasonably well below 0.5 ML by a second order process as expected, but it is clearly seen that the model breaks down at the higher coverages. The exponential behavior of the desorption rate at the saturation coverage of 1ML is a typical finger print of a reconstruction of the surface. It is indeed known that this surface reconstruct forming a ``clock'' 2x2 reconstruction. The reconstruction is stabilized by the high coverage of atomic hydrogen, but when some of the hydrogen starts to desorb the rest will become less stable leading to the exponential desorption behavior in the high coverages regime.
+
+The TPD can also be used to follow reactions on the surface. For example  when and how does formate decompose on a Cu(100) surface. This is illustrated in Figure 11.6 taken from \cite{HonCu}. The formate was either synthezied from a gas mixture of CO$_2$ and H$_2$ in a high pressure cell or made by dosing formic acid onto the surface in the UHV chamber. (In this manner it was actually possible to prove that the intermediate made in the high pressure cell was formate.) Formate is a very stable compound and it first decomposes at around 430 K into CO$_2$  and atomic hydrogen. 
+
+
+\vspace*{8cm}
+
+\noindent {\bf Figure 11.5} Desorption curves  H$_2$ from a Cu(100) single crystal as function of coverage. Notice the sharp feature at high coverage indicative of a reconstruction \cite{Rasmussen}.
+
+
+\vspace*{9cm}
+
+\noindent {\bf Figure 11.6}  TPD curves from formate. Upper panel:  Formate deposited by dosing formic acid.  Lower panel: Formate synthesized in a high pressure cell (2 bar) from a mixture of CO$_2$ and H$_2$. Taken from \cite{HonCu}
+
+
+
+
+
+ As we saw in Figure 11.5 will hydrogen desorb already at around 300 K so the hydrogen released from the decomposing formate will immediately desorb. Similarly is CO$_2$ bound very weakly on Cu(100) so the desorption features observed are in reality probing the decomposition rate as the desorption rates of CO$_2$ and H$_2$  will be in equilibrium all the time.
+
+Figure 11.7 shows an example of an TPR experiment performed under UHV conditions. Here deuterated methanol is dosed to a Ni(111) surface at different rates and the amount of methanol, CO, and deuterium is measured simultaneously. It can in this manner be seen that no reaction takes place  at the low temperature where the crystal is just becoming saturated by associatively adsorbed methanol. The surface is in this temperature regime just  reflecting the methanol beam  into the mass spectrometer resulting in a constant signal. 
+
+
+\vspace*{11cm}
+
+\noindent {\bf Figure 11.7} A TPR experiment under UHV conditions. Deuterated methanol is dosed while the crystal temperature is ramped. The desorbed species like methanol, CO, and D$_{2}$ are followed by the mass spectrometer. Taken from \cite{Yates2}.
+
+\vspace{1cm}
+
+
+
+
+ When reaching 250 K some methanol desorbs associatively ($\alpha$ peak) and some deprotonates forming methoxy species. At around 300 K the methoxy species starts to decompose spilling deuterium out on the surface, which  leads to protonation of some of the methoxy species ($\beta$ feature) and deuterium desorption. This leaves empty sites on the surface so that methanol is being consumed seen as a dip in the signal. By continuing heating the CO also will also start to desorb and the consumption persist since the surface is now basically clean. This demonstrates, that such a TPR experiment fairly rapidly can give a over view of the ongoing reactions. It could now be combined with a simultaneous oxygen dose and it can then be observed how the methanol may be oxidized into for example formaldehyde on a Cu sample.
+
+
+TPD and TPR curves obtained from plug flow reactors are in principle very similar to the well defined examples shown above except for the problems mentioned concerning the transport phenomena. Naturally will  the TPD features in general be broader since there  always will be more than one specific site contributing to the desorption energy in a real catalyst.  Also great care must  be taken to obtain a uniform flow  in the reactor.  By taking care of these problem  it has in several cases been possible to obtain TPD curves which, when correcting for the different heating rates and crystal planes present, can be compared to  results obtained on single crystals.
+
+
+Finally, a warning should be issued concerning TPD and TPR experiments in general. None of these experiment are in thermal equilibrium since we are ramping the temperature all the time. Therefor other processes make also take place at the same time obscuring some of the reactions taking place. An example is the adsorption on metal overlayers or alloys that are not stable. Consider for example the Co-Cu(111) system mentioned earlier. The CO adsorbed on the Co island will be destabilized by the Cu atoms segregating to the top of the Co islands while heating. This will  happen around the same temperature  as the desorption of the  CO molecules. Thus the  measured CO TPD will therefore not represent the true binding energy of CO on Co, but also the energy gained by segregating Cu to the surface. 
