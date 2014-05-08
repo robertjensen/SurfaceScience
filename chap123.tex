@@ -131,7 +131,7 @@ For more details on Ultra High Vacuum and design of such equipment we shall simp
 The second requirement for doing surface analysis is naturally to have methods that are sensitive to the surface. This in general rules out otherwise useful methods like electron microscopy, X-ray diffraction and M\"{o}ssbauer spectroscopy. The methods inherently applicable for surface investigations are the electron spectroscopies. These methods are relying on the fact that electrons which are passing through a medium will undergo energy losses and thereby have a limited penetration depth. The electron spectroscopies are all performed by excitation of the solid which then will emit electrons with a characteristic energy distribution $N(E)$ that allows for identification of the composition of the solid. The excitation source for generation of these electron energy distributions does not need to be surface sensitive and therefore high energy electrons (AES), X-rays (XPS) or even ions can be used. The important point is that the electrons emitted undergo energy losses on their way out of the solid and therefore electrons coming from inside the solid will be exponentially damped. We shall in later chapters treat the detection, measurements, and interpretation of the emitted electrons and now concentrate on the mechanisms ensuring the surface sensitivity.
 
 \subsection{The Inelastic Mean Free Path}
-A useful term for describing the energy loss process is the inelastic mean free path $\lambda (E)$.
+A useful term for describing the energy loss process is the inelastic mean free path $\lambda (E)$. Which, in this case, is the length an electron will travel in a solid without experiencing any losses. This length is usually on the order of \SIrange{5}{100}{\angstrom}.
 
 \begin{figure}[htbp]
 \centering
@@ -140,36 +140,42 @@ A useful term for describing the energy loss process is the inelastic mean free 
 \label{fig:sphere_model}
 \end{figure}
 
-If we consider a hard sphere model, see Figure~\ref{fig:sphere_model}, the mean free path can easily be derived in terms of the cross-section 
+If we consider a hard sphere model, see Figure~\ref{fig:sphere_model}, the mean free path can easily be derived in terms of the cross-section
+
 \begin{equation}
-\sigma = \pi (r_{1}+r_{2})^{2}
+\sigma =\pi (r_1+r_2)^2
 \end{equation}
-and the density $\rho$. The volume $\lambda \times \sigma$ equals the volume of one molecule which is $\rho^{-1}$ leading to
+
+\noindent and the density $\rho$. The volume $\lambda \times \sigma$ equals the volume of one molecule which is $\rho^{-1}$ leading to
+
 \begin{equation}
-\lambda = (\sigma \rho)^{-1}
+\lambda =(\sigma \rho)^{-1}
 \end{equation}
 
 For a frozen ideal gas this would give
+
 \begin{equation}
-\lambda = \frac{kT}{\sigma P}
+\lambda =\frac{kT}{\sigma P}
 \end{equation}
+
 Taking into account the relative motion of the molecules the result is
+
 \begin{equation}
-\lambda = \frac{kT}{\sqrt{2} \sigma P}
+\lambda =\frac{kT}{\sqrt{2}\sigma P}
 \end{equation}
 
-Similar considerations can be made for electrons moving in a solid matter except that the cross-section is much more complex and dependent on the underlying mechanism. Below we shall describe the different mechanisms and their importance.
+Similar considerations can be made for electrons moving in a solid matter except that the cross-section is much more complex and dependent on the underlying mechanisms. Below we will describe the different mechanisms and their importance.
 
-The important result of these mechanisms are summarised in Figure~\ref{fig:mean_free_path} where the inelastic mean free path for electrons is plotted against the electron energy in a number of different materials.
+The important result of these mechanisms is summarised in Figure~\ref{fig:mean_free_path} where the inelastic mean free path for electrons is plotted against the electron energy in a number of different materials. This particular plot is known as \emph{the universal curve}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{figures/02_06}
-\caption{The inelastic mean free path versus kinetic energy for a number of elements.}
+\caption{The universal curve showing the inelastic mean free path versus kinetic energy for a number of elements.}
 \label{fig:mean_free_path}
 \end{figure}
 
-Notice that the mean free path is only a few atomic layers if we design our experiments so that the electrons have energies in the interval \SIrange{50}{1000}{\electronvolt}.
+Notice that the mean free path is only a few atomic layers if we design our experiments so that the electrons have energies in the interval \SIrange{50}{1000}{\electronvolt}. This means that we are effectively able to set up very surface sensitive experiments when doing for instance XPS, as will be described in \autoref{ch:xps}.
 
 \subsection{The Energy Loss Mechanisms in Solids}
 There are a number of different energy loss mechanisms that are responsible for the behaviour of the inelastic mean free path observed in Figure ~\ref{fig:mean_free_path}.
@@ -319,7 +325,7 @@ For XPS there is a demand for an energy resolution better than \SI{1.0}{\electro
 \label{fig:schematics_hsa}
 \end{figure}
 
-Again the resolution is a constant percentage of the pass energy (roughly SI{1}{\percent}) and it is therefore desirable to only use low pass energies, typically \SIrange{5}{100}{\electronvolt}. On the other hand everything has its price. A high resolution means low signal and thus poor signal to noise ratio. It is therefore always important to realise what level of resolution is necessary.
+Again the resolution is a constant percentage of the pass energy (roughly \SI{1}{\percent}) and it is therefore desirable to only use low pass energies, typically \SIrange{5}{100}{\electronvolt}. On the other hand everything has its price. A high resolution means low signal and thus poor signal to noise ratio. It is therefore always important to realise what level of resolution is necessary.
 
 The electrons that have an energy that allows them to pass through the exit slit are detected by an electron multiplier. This is a ceramic tube covered on the inside with a material from which electrons are easily knocked out (see Figure~\ref{fig:electron_multiplier}).
 
@@ -330,7 +336,7 @@ The electrons that have an energy that allows them to pass through the exit slit
 \label{fig:electron_multiplier}
 \end{figure}
 
-The front of the multiplier is typically at  \SIrange{100}{200}{V} while the end is at \SIrange{2}{3}{kV}. Thus electrons are accelerated into the channeltron where they eventually will hit the wall and knock out other electrons which again are accelerated. In this manner a cascade is formed and one electron may become \numrange[range-phrase = --]{10^6}{10^7} in the other end. This is a fairly big pulse which can easily be detected by some preamplifier and converted into a signal that the computer can handle.
+The front of the multiplier is typically at  \SIrange{100}{200}{V} while the end is at \SIrange{2}{3}{kV}. Thus electrons are accelerated into the channeltron where they eventually will hit the wall and knock out other electrons which again are accelerated. In this manner a cascade is formed and one electron may become \numrange[range-phrase = --]{e6}{e7} in the other end. This is a fairly big pulse which can easily be detected by some preamplifier and converted into a signal that the computer can handle.
 
 The transmission efficiency for both types of analysers depends on the energy of the electrons. Thus when quantitative or comparative studies are undertaken it is important to take into account the transmission function. We shall come back to this under the discussion of quantitative studies of surface composition.
 
