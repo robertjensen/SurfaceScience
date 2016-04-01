@@ -131,15 +131,15 @@ What happens when considering more than one  atom scattering the incoming electr
 \end{figure}
 
 \begin{equation}
-\Delta=e^{i\vec{k} \vec{R}+i\vec{k} \vec{r_1}-i\vec{k}\vec{r_2}} 
+\Delta=e^{i\vec{k} \vec{R}+i\vec{k} \vec{r_1}-i\vec{k'}\vec{r_2}} 
 \end{equation}
 
 If the observer is far away, which is always the case here, then $\vec{r_1}\approx\vec{r_2}\gg \vec{R}$ leading to $r_2\approx r_1+R\cos(\theta)$, thus
 
 \begin{eqnarray}
-\Delta	& \approx	& e^{i\vec{k}\vec{R}+ikr_1-ik(r_1+R\cos(\theta))}\\ 
-\Delta	& \approx	& e^{i \vec{R}( \vec{k}-\vec{k^\prime})}\\
-\Delta	& \approx	& e^{i\vec{R} \vec{\Delta k}}
+\Delta	& =		& e^{i\vec{k}\vec{R}+ik_xr_1-ik'_x(r_1+R\cos\theta)+ik'_yR\sin\theta)}\\ 
+\Delta	& \approx	& e^{i\vec{k}\vec{R}-ik'_x(R\cos\theta)+ik'_yR\sin\theta} \mbox{, Since } k_x\approx k'_x\\
+\Delta	& \approx	& e^{i\vec{k}\vec{R}-i\vec{k'}\vec{R}}=e^{i(\vec{k}-\vec{k'})\vec{R}}=e^{i\vec{\Delta k}\vec{R}}
 \end{eqnarray}
 
 \noindent where $\vec{k^\prime}$ is parallel to $\vec{r_2}$ and  $\vec{\Delta k}$ is the difference between $\vec{k}$ and $\vec{k^\prime}$.
